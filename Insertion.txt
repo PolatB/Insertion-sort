@@ -1,0 +1,26 @@
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+
+1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+2. Big-O gösterimini yazınız.
+3. Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+4. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+1. Insertion sort'a en baştaki eleman sırayla baştan başlayarak yanındakilere benden küçük müsün diye sorar. ilk aşamada 2 elemanına gelir ve onunla yer değiştirir. daha sonra 27 sayısı 6 elemanına kadar gider ve onunla yer değiştirir. böylelikle ilk iki eleman sıralanmış olur ve süreç böyle devam eder. not: bütün elemanlara tek tek gider, bulduğu eleman ondan küçükse işlemi bitirmez. Burada amaç en küçük elemanı bulmak olduğu için diğer elamanlara da gider.
+[2,27,16,22,18,6]
+[2,6,16,22,18,27]
+[2,6,16,22,18,27]
+[2,6,16,18,22,27]
+2. Her elaman tek tek diğer elemanları dolaşır dolayısıyla Big-o gösterimi (n)'dir.
+
+4. Average case
+
+[7,3,5,8,2,9,4,15,6]
+
+1. [2,3,5,8,7,9,4,15,6] (2 ile 7 yer değiştirir)
+2. [2,3,5,8,7,9,4,15,6] (3 en küçük eleman olduğu için sabit kalır)
+3. [2,3,4,8,7,9,5,15,6] (5 ve 4 yer değiştirir)
+4. [2,3,4,5,7,9,8,15,6] (8 ve 5 yer değiştirir)
